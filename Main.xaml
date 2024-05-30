@@ -1,0 +1,390 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,5142" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="978,5077" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="GetTxt" />
+      <Variable x:TypeArguments="x:String" Name="GextTxt2" />
+      <Variable x:TypeArguments="x:String" Name="GetTxt3" />
+      <Variable x:TypeArguments="x:String" Name="GetPTxt" />
+      <Variable x:TypeArguments="x:String" Name="GetPTxt2" />
+      <Variable x:TypeArguments="x:String" Name="GetPTxt3" />
+      <Variable x:TypeArguments="s:String[]" Name="Producto" />
+      <Variable x:TypeArguments="s:String[]" Name="Precio" />
+      <Variable x:TypeArguments="sd:DataTable" Name="BuildDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Tienda Online Claro Colombia | Estrena Celulares 5G" sap:VirtualizedContainerService.HintSize="916,4989" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8dcbfa90-c819-4a82-9e69-764f2191076c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="882,4749" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Precio Ahora'" sap:VirtualizedContainerService.HintSize="820,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8dcbfa90-c819-4a82-9e69-764f2191076c" TextString="[GetTxt]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://tienda.claro.com.co/" CVScreenId="48c1b3b4-6205-4292-a63e-21952352cfef" CvTextArea="265, 569, 173, 16" CvType="AnyWordGroup" DesignTimeRectangle="266, 569, 172, 18" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='offerPrice_127588' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='offerPrice_127588' tag='SPAN' type='' class='product_price_category ' /&gt;" Guid="841c3496-a15a-4f93-a9ab-a517fa8e2461" InformativeScreenshot="1d64a6d5ed8f11482345a28c6492d726.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tienda Online Claro Colombia | Estrena Celulares 5G' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="48c1b3b4-6205-4292-a63e-21952352cfef" CvTextArea="352, 570, 86, 14" CvTextArgument="Precio Ahora" CvType="Text" DesignTimeRectangle="352, 569, 86, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='offerPrice_127588' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='offerPrice_127588' tag='SPAN' type='' class='productPriceNow' aaname='Precio Ahora' check:innerText='Precio Ahora' /&gt;" Guid="f8930eb7-e3b3-401c-ad1d-e014d4c404b5" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Precio Ahora'" sap:VirtualizedContainerService.HintSize="820,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="8dcbfa90-c819-4a82-9e69-764f2191076c" TextString="[GetPTxt]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://tienda.claro.com.co/" DesignTimeRectangle="204, 393, 296, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='productContainer_127588' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='productContainer_127588' tag='A' type='' class='' /&gt;" Guid="b66d301d-b339-4129-bd09-aa6fa0e89ae5" InformativeScreenshot="471ff8ad82eea5fb2cf2f8d43b6e7611.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tienda Online Claro Colombia | Estrena Celulares 5G' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="277, 435, 150, 232" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='productThumbNailImage_127588' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='productThumbNailImage_127588' tag='IMG' type='' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="c394e1ec-2c0e-4184-8a0f-e07c16435122" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="820,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[GetTxt+GetPTxt]" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Resultados de la búsqueda &quot;hONOR MAGIC 6&quot; | Ktronix Pasion Tecno" sap:VirtualizedContainerService.HintSize="820,4167" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="07fb7beb-de1d-4721-a3d0-e0cb6eeecf48" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="786,3925" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'I'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="724,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="07fb7beb-de1d-4721-a3d0-e0cb6eeecf48" Text="Honor Magic 6" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.ktronix.com/search/?text=hONOR+MAGIC+6" CVScreenId="ca699eaa-dbd6-4de4-8d94-069a9a99d913" CvTextArea="726, 245, 112, 13" CvTextArgument="hONOR MAGIC 6" CvType="Text" DesignTimeRectangle="718, 234, 530, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control js-site-search-input-algolia' placeholder='Buscar por producto, categoría, marca...' aaname='' /&gt;" Guid="e0077a92-4c31-418c-a755-5d99af54ad77" InformativeScreenshot="8b7c82390cc4a56744876eef0a3a52b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Resultados de la búsqueda &amp;quot;hONOR MAGIC 6&amp;quot; | Ktronix Pasion Tecno' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1218, 240, 24, 24" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;i' parentid='search-input' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='search-input' tag='I' class='icon alk-icon-search-mobile' aaname='' /&gt;" Guid="99e2ed54-cdb2-4778-aeed-5521653f820c" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="724,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ver más detalles'" sap:VirtualizedContainerService.HintSize="724,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="07fb7beb-de1d-4721-a3d0-e0cb6eeecf48" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.ktronix.com/search?text=honor%2520magic%25206&amp;sort=relevance" CVScreenId="88c60e12-91b3-4402-bfa7-497a5863ee68" CvTextArea="889, 822, 105, 13" CvTextArgument="Ver mas detalles" CvType="Text" DesignTimeRectangle="889, 821, 106, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='js-hits' tag='A' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl parentid='js-hits' tag='A' type='' class='js-view-details js-algolia-product-click' aaname='Ver más detalles' check:innerText='Ver más detalles' /&gt;" Guid="b5b5d82f-a470-442a-87b1-b8d2261059f7" InformativeScreenshot="f11cb0d6ea6b7808fae2f6021bb19e7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Resultados de la búsqueda &amp;quot;honor magic 6&amp;quot; | Ktronix Pasion Tecno' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text '$1.999.900 Hoy'" sap:VirtualizedContainerService.HintSize="724,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="07fb7beb-de1d-4721-a3d0-e0cb6eeecf48" TextString="[GextTxt2]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.ktronix.com/celular-honor-magic-6-lite-256gb-verde/p/6936520836208" CVScreenId="5c2ff29a-80b7-4869-abe1-0ec345330daa" CvTextArea="1124, 343, 194, 32" CvType="AnyWordGroup" DesignTimeRectangle="1125, 341, 442, 37" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='js-original_price' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='js-original_price' tag='SPAN' type='' class='col-xs-12 font-title font-title--product-price reset-padding__left reset-padding__right price-ktronix' /&gt;" Guid="e3425f51-8eda-4854-bb1d-9bbcb08223b8" InformativeScreenshot="c5df21c515b958a1d4c8ef0301eb024d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Celular HONOR Magic 6 Lite 256GB Verde | Ktronix' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text '$1.999.900 Hoy'" sap:VirtualizedContainerService.HintSize="724,189" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="07fb7beb-de1d-4721-a3d0-e0cb6eeecf48" TextString="[GetPTxt2]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.ktronix.com/celular-honor-magic-6-lite-256gb-verde/p/6936520836208" DesignTimeRectangle="317, 382, 1286, 28" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' /&gt;" Guid="c607ce33-c8c9-417b-a5e7-6a1653de7c26" InformativeScreenshot="1847b3a401fe2bb6379db25eebc2f975.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Celular HONOR Magic 6 Lite 256GB Verde | Ktronix' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="724,117" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[GextTxt2+GetPTxt2]" />
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Celulares 📱 | falabella.com" sap:VirtualizedContainerService.HintSize="724,2585" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="86ff3c4b-86a0-4aee-bd4c-afa88c35e801" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="690,2343" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'honor magic'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="628,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="86ff3c4b-86a0-4aee-bd4c-afa88c35e801" Text="Honor Magic 6" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.falabella.com.co/falabella-co/category/cat1660941/Celulares-y-Telefonos?isPLP=true&amp;Ntt=honor+magic" CVScreenId="4c48caa0-938d-4cf8-95bb-4d326cd3fe5b" CvElementArea="461, 194, 1011, 50" CvType="InputBox" DesignTimeRectangle="488, 197, 908, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='testId-SearchBar-Input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='testId-SearchBar-Input' tag='INPUT' type='text' class='SearchBar-module_searchBar__Input__1kPKS' placeholder='Buscar en falabella.com' aaname='Search Bar' /&gt;" Guid="a18d54d9-b68b-4a77-a42b-6af3f9a06fb2" InformativeScreenshot="93228415070130b0a0b0cc37ee49c33e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Celulares ?? | falabella.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="628,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                              <uix:NKeyboardShortcuts.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NKeyboardShortcuts.VerifyOptions>
+                            </uix:NKeyboardShortcuts>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Llega mañana'" sap:VirtualizedContainerService.HintSize="628,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86ff3c4b-86a0-4aee-bd4c-afa88c35e801" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.falabella.com.co/falabella-co/search?Ntt=honor+magic+6" DesignTimeRectangle="652, 281, 228, 228" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='testId-pod-72880391' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='testId-pod-72880391' tag='IMG' type='' class='jsx-1996933093' aaname='HONOR - Celular HONOR Magic 6 Lite 5G 256GB | 8GB RAM | Cámara posterior 108MP | Cámara Frontal 16MP | Pantalla 6.78 Pulgadas | Qualcomm Snapdragon SM6450' /&gt;" Guid="ea324883-bb13-49cb-b6ac-f6d6e8f36324" InformativeScreenshot="3e52232987f72ddf0317a2500d6e2156.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='falabella.com - Bienvenidos a Nuestra Tienda Online' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="655, 500, 98, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl id='testId-Pod-badges-Llega mañana' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='testId-Pod-badges-Llega mañana' tag='SPAN' type='' class='jsx-3167696911 jsx-21676270 copy8 primary  jsx-3451706699 bold        pod-badges-item-4_GRID pod-badges-item' aaname='Llega mañana' check:innerText='Llega mañana' /&gt;" Guid="6ddf02bb-c064-4832-af89-ffdf0fb2d18e" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Text '$ 1.999.900'" sap:VirtualizedContainerService.HintSize="628,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="86ff3c4b-86a0-4aee-bd4c-afa88c35e801" TextString="[GetTxt3]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.falabella.com.co/falabella-co/product/72880391/Celular-HONOR-Magic-6-Lite-5G-256GB-8GB-RAM-Camara-posterior-108MP-Camara-Frontal-16MP-Pantalla-6.78-Pulgadas-Qualcomm-Snapdragon-SM6450/72880391" DesignTimeRectangle="1261, 495, 127, 29" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='testId-pod-prices-72880391' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='testId-pod-prices-72880391' tag='SPAN' type='' class='copy12 primary senary jsx-2835692965 bold      line-height-29' /&gt;" Guid="014570cc-e636-40ab-ae9f-aed1afb976b7" InformativeScreenshot="7e715121034570b5ae458151ed8c7a55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Celular HONOR Magic 6 Lite 5G 256GB | 8GB RAM | Cámara posterior 108MP | Cámara Frontal 16MP | Pantalla 6.78 Pulgadas | Qualcomm Snapdragon SM6450 HONOR | falabella.com' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Text '$ 1.999.900'" sap:VirtualizedContainerService.HintSize="628,189" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="86ff3c4b-86a0-4aee-bd4c-afa88c35e801" TextString="[GetPTxt3]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.falabella.com.co/falabella-co/product/72880391/Celular-HONOR-Magic-6-Lite-5G-256GB-8GB-RAM-Camara-posterior-108MP-Camara-Frontal-16MP-Pantalla-6.78-Pulgadas-Qualcomm-Snapdragon-SM6450/72880391" DesignTimeRectangle="907, 370, 633, 72" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='jsx-1680787435 product-name fa--product-name false' /&gt;" Guid="cfd68752-40b5-401c-80bb-5a23df888794" InformativeScreenshot="18291fb8bef068e94c2e061f60552bb3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Celular HONOR Magic 6 Lite 5G 256GB | 8GB RAM | Cámara posterior 108MP | Cámara Frontal 16MP | Pantalla 6.78 Pulgadas | Qualcomm Snapdragon SM6450 HONOR | falabella.com' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="907, 349, 648, 18" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div' idx='6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='jsx-468546439 corner-details' tag='DIV' aaname='' check:innerText='HONOR&amp;#xD;&amp;#xA;Código: 72880391&amp;#xD;&amp;#xA;Cód. tienda: 72880391' /&gt;" Guid="efec3788-5156-4a1a-9431-3a725d432cad" ImageBase64="" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="628,117" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[GetTxt3+GetPTxt3]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="628,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="s:String[]">[Producto]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="s:String[]">[New String() {GetPTxt,GetPTxt2,GetPTxt3}]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="628,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="s:String[]">[Precio]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="s:String[]">[new String () {GetTxt,GextTxt2,GetTxt3}]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="628,690" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Producto]">
+                              <ui:ForEach.Body>
+                                <ActivityAction x:TypeArguments="x:String">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="594,494" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,301" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[CleanProduct]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[Convert.ToString()]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                    </ui:CommentOut>
+                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="532,108" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[currentText]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEach.Body>
+                            </ui:ForEach>
+                            <ui:BuildDataTable DataTable="[BuildDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="628,85" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Producto&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Precio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Producto&gt;text&lt;/Producto&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAV1JREFUWEftlzFOwzAUht8ROEKPwBF6FI7QI3ADuEHYEAlSJhYWdhYPTVMJCXlCQJcsVIhKyPgFBxznT5XXBFBRfulb8uz+f2w38qNQyZKmSU4ncU46XpAZCHW5oChd0sTZNJVqOiiN8Q8MBnuwl7P9FD+wRRUO/kFULcRvvHkIe5bmvC9oQBfU08ys1jdm816YUGh8SDKnKfHhQMVtXN1NTPGqnBUWmtcgo1NKdtj79UY7m3aheQBN4OFWbh+OnMW3nu026CKqgeYixAF4z32pxxkc1xVxAF98DtAYCb0C8NKjMRL2OwCS5AAyY4BeAV7e9Nf/voK/E2heG/t9CMcAY4AxwL8JIGpAfPUOkJMivhjCYgu+pJ9dQER8NQaFViplq2NYl3BetWrxvPsqcC9wfX8IayL4Sl4pVbYv/MvWjMUhJCuxM/bNG+a+eF8uMjobdEW41bfGZStWE9EHaZNJpRwSMrUAAAAASUVORK5CYII=" InformativeScreenshot="0227150b7985e88b27835f95666305bb.jpg" Selector="&lt;html app='chrome.exe' title='Celulares ?? | falabella.com' /&gt;" Title="Celulares ?? | falabella.com" Url="https://www.falabella.com.co/falabella-co/category/cat1660941/Celulares-y-Telefonos?isPLP=true&amp;Ntt=honor+magic" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIFSURBVDhPY2Awb2AF4kQgvgnEf4H4PwH8D4hvAXEyELOCDABpfgvE/xnMkDAKvx4hhsDvgTgVZMB1mCCbdfN/fueO/7yO7WA+i2XTfwEgX8i18z8rUA6LIbdBBvwBc0zq/yc0b/h/6c7L/5NXnwJrzune9v/S7Zf/Nxy88V/Su/c/gynQJagG/AMZAOGY1P2vnbnvPwiANFgkzf7/+OXH/3///fuf17cd4g1UzRAMZwANqJu1H2zA3jP3/68/cB3M3nz45n8+kJfAzm9E1QzCcAbQgPrZB8Cavnz79f/Xn7//n7/5/N8yeQ7YexqGRf9bVYP/6xgWAtUjGYRsQOMciAEwcPra0/+ibl1g20O1k/+/kDD8H6OViNuAprkHwRo/fP7x/9uP3/+B3geHC0iex7T6v4V+7n8+IA3XA8JwBtCA5nmHwAbsOH7n//R1p8Hs1x++/nfNWQT2BsEwaJkPMWADMADl/fr/H7n4CMw/dunxf2ns0YhkAFAyt3f7/6v3Xv3vWXoMLOaQseD/i7dfwIZMWnUSe2ICEvD0z2nX+l/QpfM/l30rRBKoOLdn2/8rd1/9P3T+4X/j+FnorgAnJFAmgmtASfdAmtWqCZyUQQZz2LYg5CD4DsiAFCAGZQxkCQSGG4pkMAR/AOJ0kAGg7Awy5A4Qg7IqsiJc+C4QpzOYN7ABAGklEjAqAi69AAAAAElFTkSuQmCC" InformativeScreenshot="6e90c9695b0538c2c7c7c4818ab17f7d.jpg" Selector="&lt;html app='chrome.exe' title='Resultados de la búsqueda &amp;quot;hONOR MAGIC 6&amp;quot; | Ktronix Pasion Tecno' /&gt;" Title="Resultados de la búsqueda &quot;hONOR MAGIC 6&quot; | Ktronix Pasion Tecno" Url="https://www.ktronix.com/search/?text=hONOR+MAGIC+6" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABHElEQVQ4T33Rr0tDYRTG8YHBMv8D3fKKyWBwsiIMo6Ag/kAwbMExm+C2KmgTi0kQLCYFq9EyixgEg/+AIHaTfh8453Lue90Nn8t7nvec997trXwvNqJZ/OIpZKXSoAYd8BKy1CFuvE4351B2wDa0LwvK0oayAzbgw3uWTfwJryGTTRSGJTZJFQNowLMj+PCOZZlcMcEdNLwfskwsVvCID4zRhfIZLNu6wBcj+GdGD8gNpPRYgg+cYx49/Fg2hPpWoRcdmGOsa+MaarxCdjK2oPzd6luro7E2nq3IXQ/q8EbVLZxCtyIn2NXGPdR0hnhAG8o/Q1agxxr8TR2FaEKDyi4s+5cv/H9IvWEKuaEoFn18QYO6gUtMI/YkGpU/WJqeOPSro7kAAAAASUVORK5CYII=" InformativeScreenshot="8e4f6167f9597d149885943e61968342.jpg" Selector="&lt;html app='chrome.exe' title='Tienda Online Claro Colombia | Estrena Celulares 5G' /&gt;" Title="New Tab - Google Chrome" Url="https://tienda.claro.com.co/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

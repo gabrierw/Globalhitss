@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BuildDataTable&Sequence_1",
+        "Precio&Sequence_1",
+        "Producto&Sequence_1",
+        "GetPTxt3&Sequence_1",
+        "GetPTxt2&Sequence_1",
+        "GetPTxt&Sequence_1",
+        "GetTxt3&Sequence_1",
+        "GextTxt2&Sequence_1",
+        "GetTxt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
